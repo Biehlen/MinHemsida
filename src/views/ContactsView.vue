@@ -73,6 +73,7 @@ body {
           font-size: 2rem;
         }
       }
+
       a:hover {
         text-shadow:
           0px 0px 5px $dark-green,
