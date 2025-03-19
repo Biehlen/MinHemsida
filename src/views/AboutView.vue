@@ -24,6 +24,9 @@
         och att få testa på att applicera det jag lärt mig i min utbildning på det verkliga arbetslivet.
       </p>
     </div>
+    <div class="lia">
+      <p>Jag söker just nu LIA-plats för perioden 13 oktober - 19 december!</p>
+    </div>
   </body>
 </template>
 
@@ -95,6 +98,14 @@ body {
       margin-bottom: 20px;
     }
   }
+  .lia {
+    p {
+      padding-left: 10px;
+      font-family: $font-montserrat;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -126,6 +137,13 @@ body {
         padding-right: 50px;
       }
     }
+    .lia {
+      margin-top: 40px;
+    p {
+      padding-left: 50px;
+      font-size: 1.2rem;
+    }
+  }
   }
 }
 
@@ -157,6 +175,12 @@ body {
         padding-right: 120px;
       }
     }
+    .lia {
+      margin-top: 50px;
+    p {
+      padding-left: 100px;
+    }
+  }
   }
 }
 </style>
