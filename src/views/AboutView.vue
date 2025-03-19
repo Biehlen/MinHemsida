@@ -5,7 +5,7 @@
       <h2>Det är jag som är Anna Biehl</h2>
     </div>
     <div class="imgContainer">
-      <img src="@/assets/AnnaBiehl.jpg" alt="" />
+      <img src="@/assets/AnnaBiehl.jpg" alt="A picture of a woman with brown long wavy hair and brown eyes." />
     </div>
     <div class="about">
       <p class="text-block1">
