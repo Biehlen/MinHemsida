@@ -6,30 +6,40 @@
       <h2>Utbildning och kompetenser</h2>
     </div>
     <div class="infoContainer">
-      <p>Nedan hittar du information om min utbildning samt de kunskaper jag än så länge har</p>
-      <div class="listContainer">
-        <ul>
-          Utbildning
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <ul>
-          Kompetenser
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
+      <p class="text">
+        Nedan hittar du information om min utbildning samt de kunskaper jag fått såhär långt i min utbildning.
       </p>
+      <div class="listContainer">
+        <div class="education-container">
+          <ul>
+            <h4>Utbildning</h4>
+            <li>Front end utvecklare</li>
+            <p>Medieinstitutet, 2024-Pågående</p>
+            <p>
+              - I min utbildning hos Medieinstitutet får jag kunskaper i bl.a. HTML, CSS, JavaScript/TypeScript,
+              UX/Usability, A11y, webbdesign, ramverk och agilt projektarbete.
+            </p>
+            <li>Undersköterskeutbildning</li>
+            <p>Moa lärcentrum samt KUI, 2018-2019</p>
+            <li>Gymnasieexamen</li>
+            <p>S:T Eriks gymnasium, 2006-2009</p>
+            <p>- Estetiska programmet inriktning musikal</p>
+          </ul>
+        </div>
+        <div class="knowledge-container">
+          <ul>
+            <h4>Kompetenser inom:</h4>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript/TypeScript</li>
+            <li>Agilt projektarbete</li>
+            <li>UX/Usability</li>
+            <li>Vue.js</li>
+            <li>API utveckling</li>
+          </ul>
+        </div>
+      </div>
+      <p></p>
     </div>
   </body>
 </template>
@@ -49,6 +59,7 @@
 
 body {
   .headerContainer {
+    margin-left: 20px;
     h2 {
       font-family: $font-italianno;
       font-size: 2.3rem;
@@ -60,18 +71,40 @@ body {
 
   .infoContainer {
     font-family: $font-montserrat;
+    margin-right: 50px;
 
-    .listContainer {
+    .text {
+      margin-left: 20px;
+      padding-bottom: 10px;
+    }
+
+    .education-container {
       ul {
         font-size: 1rem;
       }
+
+      h4 {
+        margin-top: 2px;
+      }
       li {
         font-size: 1rem;
+        font-weight: 500;
+        //margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 0.9rem;
       }
     }
-    p {
-      font-size: 1rem;
-      margin-bottom: 50px;
+    .knowledge-container {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      ul {
+        line-height: 1.5rem;
+
+        h4 {
+        }
+      }
     }
   }
 }
@@ -89,13 +122,31 @@ body {
 
     .infoContainer {
       .listContainer {
-        ul {
-          font-size: 1.1rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .education-container {
+          width: 45%;
+
+          ul {
+            font-size: 1.1rem;
+          }
+          li {
+            font-size: 1.1rem;
+          }
         }
-        li {
-          font-size: 1.1rem;
+
+        .knowledge-container {
+          width: 45%;
+          padding-top: 0;
+
+          ul {
+            font-size: 1.1rem;
+          }
         }
       }
+
       p {
         font-size: 1.1rem;
       }
@@ -108,6 +159,37 @@ body {
     .headerContainer {
       h2 {
         font-size: 3rem;
+      }
+    }
+    .infoContainer {
+      .listContainer {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .education-container {
+          width: 40%;
+
+          ul {
+            font-size: 1.1rem;
+          }
+          li {
+            font-size: 1.1rem;
+          }
+        }
+
+        .knowledge-container {
+          width: 45%;
+          padding-top: 0;
+
+          ul {
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      p {
+        font-size: 1.1rem;
       }
     }
   }
