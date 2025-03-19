@@ -1,4 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue';
+
+const showPhoneNumber = ref(false);
+
+const togglePhoneNumber = () => {
+  showPhoneNumber.value = !showPhoneNumber.value;
+};
+</script>
 
 <template>
   <body>
@@ -14,9 +22,12 @@
         <a href="mailto:Anna.Biehl@medieinstitutet.se">
           <i class="fa-solid fa-at"></i>
         </a>
-        <a href="tel:+46707972231">
-          <i class="fas fa-phone"></i>
-        </a>
+        <div class="phone-container">
+          <a href="tel:+46707972231" @click.prevent="togglePhoneNumber">
+            <i class="fas fa-phone"></i>
+          </a>
+          <p v-if="showPhoneNumber">+46707972231</p>
+        </div>
         <a href="https://www.linkedin.com/in/anna-biehl-4b5497330" target="_blank">
           <i class="fa-brands fa-linkedin"></i>
         </a>
@@ -84,6 +95,18 @@ body {
       a:focus {
         outline: none;
         box-shadow: none;
+      }
+
+      .phone-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          margin-top: 0.5rem;
+          font-size: 1rem;
+          color: $black;
+        }
       }
     }
   }
