@@ -13,12 +13,8 @@
         <div class="education-container">
           <ul>
             <h4>Utbildning</h4>
-            <li>Front end utvecklare</li>
+            <li>Front end developer</li>
             <p>Medieinstitutet, 2024-Pågående</p>
-            <p>
-              - I min utbildning hos Medieinstitutet får jag kunskaper i bl.a. HTML, CSS, JavaScript/TypeScript,
-              UX/Usability, A11y, webbdesign, ramverk och agilt projektarbete.
-            </p>
             <li>Undersköterskeutbildning</li>
             <p>Moa lärcentrum samt KUI, 2018-2019</p>
             <li>Gymnasieexamen</li>
@@ -35,11 +31,23 @@
             <li>Agilt projektarbete</li>
             <li>UX/Usability</li>
             <li>Vue.js</li>
-            <li>API utveckling</li>
+            <li>API utveckling (pågående)</li>
           </ul>
         </div>
       </div>
-      <p></p>
+      <div class="information">
+        <p>
+          Jag studerar till Frontend Developer på Medieinstitutet, där jag lär mig att utveckla moderna och
+          användarvänliga webblösningar. Utbildningen omfattar allt från HTML, CSS och JavaScript till att använda olika
+          ramverk och API:er, med fokus på design, interaktivitet och användarupplevelse. Genom praktiska projekt och
+          två längre praktikperioder (LIA) får jag värdefull erfarenhet av att arbeta i verkliga utvecklingsmiljöer.
+          Detta ger mig både teknisk kompetens och insikt i hur branschen fungerar.
+        </p>
+        <a
+          href="https://medieinstitutet.se/utbildningar/front-end-developer/?gad_source=1&gclid=Cj0KCQjw1um-BhDtARIsABjU5x5iAopAzhi_vrsasLGMFFnIvqCFL3snUiA-mYzbIAFHPHzCWHRVvigaAsHZEALw_wcB"
+          >Mer info om min utbildning hittar du här</a
+        >
+      </div>
     </div>
   </body>
 </template>
@@ -101,9 +109,20 @@ body {
       padding-bottom: 10px;
       ul {
         line-height: 1.5rem;
+      }
+    }
+    .information {
+      margin-left: 20px;
+      font-size: 0.9rem;
 
-        h4 {
-        }
+      a {
+        display: flex;
+        justify-content: center;
+        color: $black;
+      }
+
+      a:hover {
+        text-shadow: 4px 4px 15px $dark-green;
       }
     }
   }
