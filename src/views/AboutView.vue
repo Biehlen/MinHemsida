@@ -99,6 +99,8 @@ body {
     }
   }
   .lia {
+    display: flex;
+    justify-content: center;
     p {
       padding-left: 10px;
       font-family: $font-montserrat;

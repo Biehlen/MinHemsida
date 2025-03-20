@@ -15,7 +15,11 @@ const togglePhoneNumber = () => {
       <h3>Då har du kommit till rätt ställe!</h3>
     </div>
     <div class="infoContainer">
-      <p>
+      <div class="lia">
+        <p class="lia-info">Jag söker just nu LIA-plats för perioden 13 oktober - 19 december!</p>
+        <p>Har du en plats att erbjuda eller vet någon som ev har det är du mer än välkommen att höra av dig.</p>
+      </div>
+      <p class="contact-info">
         Nedan hittar du mina kontaktuppgifter samt länk till min GitHub där du kan ta en närmare kik på mina projekt.
       </p>
       <div class="contacts-container">
@@ -71,6 +75,26 @@ body {
   }
   .infoContainer {
     font-family: $font-montserrat;
+
+    .lia {
+      background-color: $light-green;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+
+      .lia-info {
+        font-family: $font-montserrat;
+        font-weight: 700;
+        font-size: 1rem;
+      }
+    }
+
+    .contact-info {
+      margin-bottom: 0;
+    }
 
     .contacts-container {
       display: flex;
