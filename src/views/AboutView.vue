@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <body>
     <div class="welcomeContainer">
@@ -5,23 +7,41 @@
       <h2>Det är jag som är Anna Biehl</h2>
     </div>
     <div class="imgContainer">
-      <img src="@/assets/AnnaBiehl.jpg" alt="A picture of a woman with brown long wavy hair and brown eyes." />
+      <img
+        src="/AnnaBiehl.jpg"
+        alt="A picture of a woman with brown long wavy hair and brown eyes."
+        width="425"
+        height="453"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
     <div class="about">
       <p class="text-block1">
-        Jag följer just nu en dröm sedan länge, att utbilda mig till front end utvecklare. <br />
-        Efter många år som familjens "it-kontakt" där jag ofta fått hjälpa till att navigera bl.a. webbsidor och appar
-        känns det nu oerhört spännande att lära mig att själv skapa användarvänliga, estetiskt tilltalande webblösningar
-        som är enkla att använda för såväl gamla som unga.
+        Just nu följer jag en dröm som jag haft sedan länge – att utbilda mig till frontend utvecklare. Efter många år
+        som familjens "it-kontakt," där jag ofta fått hjälpa till att navigera webbsidor och appar, känns det oerhört
+        spännande att få lära mig att själv skapa användarvänliga, estetiskt tilltalande webblösningar som är enkla att
+        använda för både gamla och unga.
       </p>
       <p class="text-block2">
-        Jag gillar att utmana mig själv och att lära mig nya saker, något som jag märkt passar bra inom denna branschen
-        då den ständigt uppdateras.
+        Jag har alltid fascinerats av att följa processer, oavsett om det handlar om att utveckla en idé till en färdig
+        produkt eller att se något växa fram i min trädgård – då odling är en av mina stora fritidsintressen. På samma
+        sätt uppskattar jag möjligheten att följa varje steg inom webbutveckling och se ett projekt ta form.
+      </p>
+      <p>
+        Tidigare har jag arbetat med människor i alla åldrar, från 1 till 100 år, vilket har gett mig en bred erfarenhet
+        av att möta olika behov och perspektiv. Jag har även deltagit i flera ungdomsutbyten runtom i Europa, där jag
+        fått samarbeta med människor från olika kulturer och språk, något som har stärkt min förmåga att kommunicera och
+        samarbeta i varierade miljöer.
+      </p>
+      <p>
+        Jag gillar att utmana mig själv och att lära mig nya saker – en egenskap som jag märkt passar perfekt inom denna
+        bransch, där utvecklingen ständigt går framåt. Genom mina tidigare arbetslivserfarenheter har jag lärt mig att
+        arbeta både självständigt och i team, att vara kreativ och lösningsorienterad.
       </p>
       <p class="text-block3">
-        Genom mina tidigare arbetslivserfarenheter har jag lärt mig att arbeta både självständigt och i team, att vara
-        kreativ samt lösningsorienterad. Som person är jag nyfiken och ser verkligen fram emot att fortsätta utvecklas
-        och att få testa på att applicera det jag lärt mig i min utbildning på det verkliga arbetslivet.
+        Som person är jag nyfiken och ser verkligen fram emot att fortsätta utvecklas och att få testa på att applicera
+        det jag lärt mig i min utbildning på det verkliga arbetslivet.
       </p>
     </div>
     <div class="lia">
@@ -53,14 +73,14 @@ body {
     font-family: $font-italianno;
     padding-left: 35%;
     h1 {
-      font-size: 2.4rem;
+      font-size: 2.5rem;
       font-weight: 100;
       margin-top: 30px;
       opacity: 0;
       animation: slideInFromRight 1s ease-out forwards;
     }
     h2 {
-      font-size: 1.9rem;
+      font-size: 2rem;
       font-weight: 100;
       max-width: 60%;
       margin-top: 0;
@@ -83,7 +103,7 @@ body {
     font-family: $font-montserrat;
 
     .text-block1 {
-      margin-top: 40px;
+      margin-top: 30px;
     }
 
     p {
@@ -141,11 +161,11 @@ body {
     }
     .lia {
       margin-top: 40px;
-    p {
-      padding-left: 50px;
-      font-size: 1.2rem;
+      p {
+        padding-left: 50px;
+        font-size: 1.2rem;
+      }
     }
-  }
   }
 }
 
@@ -179,10 +199,10 @@ body {
     }
     .lia {
       margin-top: 50px;
-    p {
-      padding-left: 100px;
+      p {
+        padding-left: 100px;
+      }
     }
-  }
   }
 }
 </style>

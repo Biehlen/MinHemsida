@@ -25,6 +25,11 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/ContactsView.vue'),
     },
+    {
+      path: '/pdf',
+      name: 'pdf',
+      component: () => import('../views/PdfView.vue'),
+    },
   ],
 });
 

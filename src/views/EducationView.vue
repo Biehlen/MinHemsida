@@ -7,13 +7,16 @@
     </div>
     <div class="infoContainer">
       <p class="text">
-        Nedan hittar du information om min utbildning samt de kunskaper jag fått såhär långt i min utbildning.
+        Nedan hittar du information om min utbildning samt de kunskaper jag fått såhär långt. 
       </p>
+      <div class="cv">
+        <router-link to="/pdf">Vill du kika på min CV hittar du den här</router-link>
+      </div>
       <div class="listContainer">
         <div class="education-container">
           <ul>
             <h4>Utbildning</h4>
-            <li>Front end developer</li>
+            <li>Frontend developer</li>
             <p>Medieinstitutet, 2024-Pågående</p>
             <li>Undersköterskeutbildning</li>
             <p>Moa lärcentrum samt KUI, 2018-2019</p>
@@ -31,7 +34,7 @@
             <li>Agilt projektarbete</li>
             <li>UX/Usability</li>
             <li>Vue.js</li>
-            <li>API utveckling (pågående)</li>
+            <li>API utveckling (pågående kurs)</li>
           </ul>
         </div>
       </div>
@@ -70,7 +73,7 @@ body {
     margin-left: 20px;
     h2 {
       font-family: $font-italianno;
-      font-size: 2.3rem;
+      font-size: 2.5rem;
       font-weight: 100;
       opacity: 0;
       animation: slideInFromLeft 1s ease-out forwards;
@@ -84,6 +87,23 @@ body {
     .text {
       margin-left: 20px;
       padding-bottom: 10px;
+    }
+
+    .cv {
+      margin-left: 20px;
+      padding-bottom: 30px;
+ 
+      a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        color: $dark-green;
+        text-decoration: underline;
+      }
+
     }
 
     .education-container {
@@ -113,7 +133,7 @@ body {
     }
     .information {
       margin-left: 20px;
-      font-size: 0.9rem;
+      font-size: 1rem;
 
       a {
         display: flex;

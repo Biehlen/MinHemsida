@@ -22,6 +22,11 @@ body {
       display: flex;
       justify-content: flex-end;
       margin-right: 10px;
+
+      p {
+        font-family: $font-montserrat;
+        color: $black;
+      }
     }
   }
 }

@@ -13,28 +13,32 @@ import MelsDriveIn from '@/assets/MelsDriveIn.jpg';
 import RaddaResten from '@/assets/RaddaResten.jpg';
 
 const images = [
-  { src: ToughCookie, link: 'https://biehlen.github.io/ToughCookie/', text: 'ToughCookie', text2: 'HTML/CSS' },
+  { src: ToughCookie, link: 'https://biehlen.github.io/ToughCookie/', alt: 'The front page of a website for a fake restaurant. In the picture there is text and a picture of a green crispy lettuce', text: 'ToughCookie', text2: 'HTML/CSS' },
   {
     src: MunkFabriken,
     link: 'https://medieinstitutet.github.io/fed24d-js-intro-inl-1-webshop-Biehlen/',
+    alt: 'A picture of a website for a fake donutshop. In the picture there is several different types of donuts.',
     text: 'Munkfabriken',
     text2: 'Javascript',
   },
   {
     src: Quiz,
     link: 'https://medieinstitutet.github.io/fed24d-js-intro-inl-2-quiz-king-edward/',
+    alt: 'The start page of a quiz game. The only thing visible is text describing the quiz.',
     text: 'Quiz',
     text2: 'Grupparbete',
   },
   {
     src: MelsDriveIn,
     link: 'https://medieinstitutet.github.io/fed24d-grafiska-verktyg-kattalemurerna/',
+    alt: 'The startpage of a website for a fake drive in. In the image there is a picture of a man on the cover to the film Rebel without a cause.', 
     text: 'Mels drive in',
     text2: 'Grupparbete',
   },
   {
     src: RaddaResten,
     link: 'https://www.figma.com/proto/1N3tOmFaCJwT3YA3pLFx4x/UX-Grupp-7?page-id=215%3A2&node-id=257-392&starting-point-node-id=257%3A392&t=rSgGv9rIiKlulq5M-1',
+    alt: 'A picture of the start page to an app prototype.',
     text: 'Rädda resten',
     text2: 'Grupparbete',
   },
@@ -60,7 +64,7 @@ const images = [
       <SwiperSlide v-for="(image, index) in images" :key="index">
         <a :href="image.link" target="_blank">
           <div class="image-container">
-            <img :src="image.src" :alt="image.text" />
+            <img :src="image.src" :alt="image.text" loading="lazy" />
           </div>
           <p>{{ image.text }}</p>
           <p class="text2">{{ image.text2 }}</p>

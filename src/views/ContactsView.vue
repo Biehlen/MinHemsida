@@ -23,19 +23,19 @@ const togglePhoneNumber = () => {
         Nedan hittar du mina kontaktuppgifter samt länk till min GitHub där du kan ta en närmare kik på mina projekt.
       </p>
       <div class="contacts-container">
-        <a href="mailto:Anna.Biehl@medieinstitutet.se">
+        <a href="mailto:Anna.Biehl@medieinstitutet.se" aria-label="Skicka ett mail till Anna Biehl">
           <i class="fa-solid fa-at"></i>
         </a>
         <div class="phone-container">
-          <a href="tel:+46707972231" @click.prevent="togglePhoneNumber">
+          <a href="tel:+46707972231" @click.prevent="togglePhoneNumber" aria-label="Ring Anna Biehl">
             <i class="fas fa-phone"></i>
           </a>
           <p v-if="showPhoneNumber">+46707972231</p>
         </div>
-        <a href="https://www.linkedin.com/in/anna-biehl-4b5497330" target="_blank">
+        <a href="https://www.linkedin.com/in/anna-biehl-4b5497330" target="_blank" aria-label="Besök Anna Biehls LinkedIn">
           <i class="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://github.com/Biehlen" target="_blank">
+        <a href="https://github.com/Biehlen" target="_blank" aria-label="Besök Anna Biehls GitHub">
           <i class="fa-brands fa-github"></i>
         </a>
       </div>
@@ -62,7 +62,7 @@ body {
   .headerContainer {
     h2 {
       font-family: $font-italianno;
-      font-size: 2.1rem;
+      font-size: 2.5rem;
       font-weight: 100;
       opacity: 0;
       animation: slideInFromLeft 1s ease-out forwards;

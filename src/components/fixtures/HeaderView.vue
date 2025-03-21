@@ -17,32 +17,32 @@ function handleKeyDown(event: KeyboardEvent) {
 
 <template>
   <header>
-    <div class="hamburger" @click="toggleMenu" aria-lable="open menu" @keydown="handleKeyDown" tabindex="0">
+    <div class="hamburger" @click="toggleMenu" aria-label="open menu" @keydown="handleKeyDown" tabindex="0">
       <span></span>
       <span></span>
       <span></span>
     </div>
     <div class="logo">
-      <img :src="SVG" />
+      <img :src="SVG" alt="Anna Biehl Code" />
     </div>
 
     <nav :class="{ open: isMenuOpen }">
-      <button class="close" @click="toggleMenu" aria-lable="close menu">
+      <button class="close" @click="toggleMenu" aria-label="close menu">
         <span class="line"></span>
         <span class="line"></span>
       </button>
 
       <ul>
         <li>
-          <router-link to="/" active-class="active" @click="toggleMenu" aria-lable="about"> Om mig </router-link>
+          <router-link to="/" active-class="active" @click="toggleMenu" aria-label="about"> Om mig </router-link>
         </li>
         <li>
-          <RouterLink to="/education" active-class="active" @click="toggleMenu" aria-lable="education">
+          <RouterLink to="/education" active-class="active" @click="toggleMenu" aria-label="education">
             Kompetenser
           </RouterLink>
         </li>
         <li>
-          <RouterLink to="/contacts" active-class="active" @click="toggleMenu" aria-lable="contacts">
+          <RouterLink to="/contacts" active-class="active" @click="toggleMenu" aria-label="contacts">
             Kontakt
           </RouterLink>
         </li>
