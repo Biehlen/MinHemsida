@@ -1,0 +1,36 @@
+name: Deploy Vue.js to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Workflow körs när du pushar till main-grenen
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Ange vilken version av Node.js du vill använda
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Build the app
+      - name: Build the app
+        run: npm run build
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token används för att autentisera och ge åtkomst
+          publish_dir: ./dist  # Mappen som innehåller de byggda filerna
