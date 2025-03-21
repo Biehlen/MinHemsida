@@ -1,15 +1,19 @@
-import { fileURLToPath, URL } from 'node:url';
-
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import path from 'path';
+import { createRequire } from 'module';
 
-// https://vite.dev/config/
+// Se till att 'crypto' används från polyfill
+const require = createRequire(import.meta.url);
+require('crypto-browserify');
+
 export default defineConfig({
   plugins: [vue()],
-  base: '/MinHemsida',
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@': path.resolve(__dirname, './src'),
+      'crypto': 'crypto-browserify',
     },
   },
+  base: '/MinHemsida',
 });

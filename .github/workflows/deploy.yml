@@ -22,11 +22,24 @@ jobs:
 
       # Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          npm install crypto-browserify # Installera polyfill för crypto
+
+      # Rensa gamla byggfiler
+      - name: Clean previous build
+        run: rm -rf dist
 
       # Build the app
       - name: Build the app
-        run: npm run build
+        run: |
+          npm run build
+          echo "Build completed"
+          ls -la dist  # Kontrollera att byggfiler finns i dist-mappen
+
+      # Kontrollera felmeddelanden efter byggning
+      - name: Check build logs
+        run: tail -n 100 /home/runner/work/MinHemsida/MinHemsida/npm-debug.log
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
