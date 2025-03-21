@@ -1,1 +1,0 @@
-import{_ as t,c as n,a as s,o}from"./index-BMsIBCC6.js";const r="/MinHemsida/assets/CV-BAjGOnZg.jpg",a={},c={class:"pdf-container"};function i(d,e){return o(),n("div",c,e[0]||(e[0]=[s("p",null,null,-1),s("img",{src:r,width:"100%",height:"100%",frameborder:"0",style:{"min-height":"80vh"}},null,-1)]))}const l=t(a,[["render",i],["__scopeId","data-v-6db61731"]]);export{l as default};
