@@ -15,5 +15,5 @@ export default defineConfig({
       'crypto': 'crypto-browserify',
     },
   },
-  base: '/MinHemsida',
+  base: '/',
 });
