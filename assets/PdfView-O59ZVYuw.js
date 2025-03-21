@@ -1,0 +1,1 @@
+import{_ as s,c as t,a as o,o as a}from"./index-_DB7DIlr.js";const n="/MinHemsida/assets/CV-BAjGOnZg.jpg",r={},c={class:"pdf-container"};function i(d,e){return a(),t("div",c,e[0]||(e[0]=[o("img",{src:n,width:"100%",height:"100%",frameborder:"0",style:{"min-height":"80vh"}},null,-1)]))}const f=s(r,[["render",i],["__scopeId","data-v-b4501b5a"]]);export{f as default};
